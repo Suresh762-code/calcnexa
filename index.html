@@ -1,17 +1,1158 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CalcNexa - Free Online Calculators</title><meta name="description" content="Free online calculators for math, finance, health, dates, GST, EMI, percentages and more."><meta name="robots" content="index,follow"><link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="style.css"></head><body>
-<header class="site-header"><div class="container nav-container"><a class="logo" href="index.html">Calc<span>Nexa</span></a><nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="index.html#calculators">Calculators</a><a href="index.html#finance">Finance</a><a href="index.html#health">Health</a><a href="blog.html">Blog</a></nav><button class="menu-toggle" id="menuToggle">☰</button><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☾</button></div></header>
-<main><section class="hero"><div class="container hero-content"><span class="badge">Free Online Calculator Tools</span><h1>Calculate Anything. <span>Instantly.</span></h1><p>Fast, accurate and easy-to-use calculators for math, finance, health and everyday calculations.</p><div class="search"><input id="calculatorSearch" type="search" placeholder="Search calculators..." aria-label="Search calculators"></div></div></section>
-<section class="section" id="calculators"><div class="container"><div class="section-heading"><span class="section-label">All Tools</span><h2>Popular Calculators</h2><p>Choose a calculator and get your result instantly.</p></div><div class="grid"><a class="card calculator-card" data-name="standard calculator basic math" href="calculators/standard-calculator.html"><div class="icon">🧮</div><h3>Standard Calculator</h3><p>Basic arithmetic operations.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="scientific calculator math" href="calculators/scientific-calculator.html"><div class="icon">∑</div><h3>Scientific Calculator</h3><p>Trigonometry, logs, powers and roots.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="percentage percent math" href="calculators/percentage-calculator.html"><div class="icon">%</div><h3>Percentage Calculator</h3><p>Find percentages and percentage change.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="age birthday date" href="calculators/age-calculator.html"><div class="icon">🎂</div><h3>Age Calculator</h3><p>Find age in years, months and days.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="bmi health weight height" href="calculators/bmi-calculator.html"><div class="icon">♡</div><h3>BMI Calculator</h3><p>Calculate body mass index.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="emi loan finance" href="calculators/emi-calculator.html"><div class="icon">₹</div><h3>EMI Calculator</h3><p>Estimate monthly loan installments.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="loan finance" href="calculators/loan-calculator.html"><div class="icon">🏦</div><h3>Loan Calculator</h3><p>Estimate payment, interest and total cost.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="compound interest investment" href="calculators/compound-interest-calculator.html"><div class="icon">📈</div><h3>Compound Interest</h3><p>Estimate investment growth.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="gst tax" href="calculators/gst-calculator.html"><div class="icon">🧾</div><h3>GST Calculator</h3><p>Add or remove GST from an amount.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="discount sale" href="calculators/discount-calculator.html"><div class="icon">🏷</div><h3>Discount Calculator</h3><p>Find final sale price and savings.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="date difference days" href="calculators/date-calculator.html"><div class="icon">📅</div><h3>Date Difference</h3><p>Find the difference between dates.</p><span class="go">Calculate →</span></a>
-<a class="card calculator-card" data-name="average mean math" href="calculators/average-calculator.html"><div class="icon">x̄</div><h3>Average Calculator</h3><p>Calculate the arithmetic mean.</p><span class="go">Calculate →</span></a></div></div></section>
-<section class="section alt"><div class="container"><div class="section-heading"><span class="section-label">Why CalcNexa?</span><h2>Simple calculations without the hassle</h2><p>Fast, responsive, free and designed for phones, tablets and desktops.</p></div></div></section></main>
-<footer class="footer"><div class="container footer-grid"><div><a class="logo" href="index.html">Calc<span>Nexa</span></a><p>Free, fast online calculators for everyday use.</p></div><div class="footer-col"><h3>Tools</h3><a href="calculators/percentage-calculator.html">Percentage</a><a href="calculators/emi-calculator.html">EMI</a><a href="calculators/age-calculator.html">Age</a></div><div class="footer-col"><h3>Company</h3><a href="about.html">About</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a></div><div class="footer-col"><h3>Legal</h3><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div><div class="container footer-bottom"><span>© <span id="currentYear"></span> CalcNexa</span><span>Results are for informational purposes.</span></div></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CalcNexa - Online Calculators for Math, Finance & Health</title>
+
+    <meta name="description"
+      content="Use CalcNexa online calculators for percentages, EMI, loans, compound interest, GST, BMI, age, dates, averages and everyday math.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon"
+          href="assets/favicon.svg"
+          type="image/svg+xml">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header class="site-header">
+
+    <div class="container nav-container">
+
+        <a class="logo" href="index.html">
+            Calc<span>Nexa</span>
+        </a>
+
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="#calculators">
+                Calculators
+            </a>
+
+            <a href="#finance">
+                Finance
+            </a>
+
+            <a href="#health">
+                Health
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu">
+
+            ☰
+
+        </button>
+
+
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode">
+
+            ☾
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="home-hero">
+
+    <div class="container home-hero-content">
+
+        <h1>
+            Calculate Anything.
+            <span>Instantly.</span>
+        </h1>
+
+
+        <p class="hero-description">
+
+            Fast, accurate and easy-to-use online calculators
+            for math, finance, health, dates and everyday
+            calculations.
+
+        </p>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="home-search">
+
+            <span class="home-search-icon">
+                ⌕
+            </span>
+
+            <input
+                type="search"
+                id="calculatorSearch"
+                placeholder="Search calculators — EMI, BMI, percentage, age..."
+                aria-label="Search calculators">
+
+            <span class="search-shortcut">
+                /
+            </span>
+
+        </div>
+
+
+        <div class="hero-quick-links">
+
+            <span>Popular:</span>
+
+            <a href="calculators/percentage-calculator.html">
+                Percentage
+            </a>
+
+            <a href="calculators/emi-calculator.html">
+                EMI
+            </a>
+
+            <a href="calculators/age-calculator.html">
+                Age
+            </a>
+
+            <a href="calculators/bmi-calculator.html">
+                BMI
+            </a>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>12+</strong>
+                <span>Calculators</span>
+            </div>
+
+            <div>
+                <strong>Easy</strong>
+                <span>To Use</span>
+            </div>
+
+            <div>
+                <strong>Instant</strong>
+                <span>Results</span>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>Available</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     POPULAR CALCULATORS
+================================================== -->
+
+<section
+    class="section calculator-home-section"
+    id="calculators">
+
+    <div class="container">
+
+
+        <div class="home-section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    POPULAR TOOLS
+                </span>
+
+                <h2>
+                    Everyday Calculators
+                </h2>
+
+                <p>
+                    Quick access to our most useful
+                    calculation tools.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="grid home-calculator-grid">
+
+
+            <!-- STANDARD -->
+
+            <a
+    class="card calculator-card"
+    data-name="percentage percent math"
+    data-category="math"
+    href="calculators/percentage-calculator.html">
+
+    <div class="icon">%</div>
+
+    <span class="calculator-category">Math</span>
+
+    <h3>Percentage Calculator</h3>
+
+    <p>
+        Calculate percentages, percentage
+        increases and decreases.
+    </p>
+
+    <span class="go">
+        Calculate →
+    </span>
+
+</a>
+
+
+
+            <!-- SCIENTIFIC -->
+
+            <a
+                class="card calculator-card"
+                data-name="scientific calculator trigonometry logarithm math"
+                href="calculators/scientific-calculator.html">
+
+                <div class="calculator-card-top">
+
+                    <div class="icon">
+                        ∑
+                    </div>
+
+                    <span class="tool-category">
+                        Math
+                    </span>
+
+                </div>
+
+                <h3>
+                    Scientific Calculator
+                </h3>
+
+                <p>
+                    Trigonometry, logarithms, powers,
+                    roots and scientific calculations.
+                </p>
+
+                <span class="go">
+                    Open Calculator
+                    <strong>→</strong>
+                </span>
+
+            </a>
+
+
+
+            <!-- PERCENTAGE -->
+
+            <a
+                class="card calculator-card"
+                data-name="percentage percent calculator math"
+                href="calculators/percentage-calculator.html">
+
+                <div class="calculator-card-top">
+
+                    <div class="icon">
+                        %
+                    </div>
+
+                    <span class="tool-category">
+                        Math
+                    </span>
+
+                </div>
+
+                <h3>
+                    Percentage Calculator
+                </h3>
+
+                <p>
+                    Calculate percentages quickly
+                    without remembering the formula.
+                </p>
+
+                <span class="go">
+                    Open Calculator
+                    <strong>→</strong>
+                </span>
+
+            </a>
+
+
+
+            <!-- AGE -->
+
+            <a
+                class="card calculator-card"
+                data-name="age birthday date calculator"
+                href="calculators/age-calculator.html">
+
+                <div class="calculator-card-top">
+
+                    <div class="icon">
+                        🎂
+                    </div>
+
+                    <span class="tool-category">
+                        Date
+                    </span>
+
+                </div>
+
+                <h3>
+                    Age Calculator
+                </h3>
+
+                <p>
+                    Find exact age in years,
+                    months and days.
+                </p>
+
+                <span class="go">
+                    Open Calculator
+                    <strong>→</strong>
+                </span>
+
+            </a>
+
+
+
+            <!-- DATE -->
+
+            <a
+                class="card calculator-card"
+                data-name="date difference days calendar"
+                href="calculators/date-calculator.html">
+
+                <div class="calculator-card-top">
+
+                    <div class="icon">
+                        📅
+                    </div>
+
+                    <span class="tool-category">
+                        Date
+                    </span>
+
+                </div>
+
+                <h3>
+                    Date Difference
+                </h3>
+
+                <p>
+                    Find the number of days between
+                    two calendar dates.
+                </p>
+
+                <span class="go">
+                    Open Calculator
+                    <strong>→</strong>
+                </span>
+
+            </a>
+
+
+
+            <!-- AVERAGE -->
+
+            <a
+                class="card calculator-card"
+                data-name="average arithmetic mean math"
+                href="calculators/average-calculator.html">
+
+                <div class="calculator-card-top">
+
+                    <div class="icon">
+                        x̄
+                    </div>
+
+                    <span class="tool-category">
+                        Math
+                    </span>
+
+                </div>
+
+                <h3>
+                    Average Calculator
+                </h3>
+
+                <p>
+                    Calculate the arithmetic mean
+                    of multiple values.
+                </p>
+
+                <span class="go">
+                    Open Calculator
+                    <strong>→</strong>
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FINANCE
+================================================== -->
+
+<section
+    class="section category-section"
+    id="finance">
+
+    <div class="container">
+
+
+        <div class="category-header">
+
+            <div class="category-heading-left">
+
+                <div class="category-large-icon">
+                    ₹
+                </div>
+
+                <div>
+
+                    <span class="section-label">
+                        FINANCE
+                    </span>
+
+                    <h2>
+                        Financial Calculators
+                    </h2>
+
+                    <p>
+                        Calculate loans, interest,
+                        taxes and savings.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="grid home-calculator-grid">
+
+
+            <!-- EMI -->
+
+            <a
+                class="card calculator-card"
+                data-name="emi loan monthly payment finance"
+                href="calculators/emi-calculator.html">
+
+                <div class="calculator-card-top">
+
+                    <div class="icon">
+                        ₹
+                    </div>
+
+                    <span class="tool-category">
+                        Finance
+                    </span>
+
+                </div>
+
+                <h3>
+                    EMI Calculator
+                </h3>
+
+                <p>
+                    Estimate monthly loan payments
+                    using amount, rate and tenure.
+                </p>
+
+                <span class="go">
+                    Calculate EMI
+                    <strong>→</strong>
+                </span>
+
+            </a>
+
+
+
+            <!-- LOAN -->
+
+            <a
+                class="card calculator-card"
+                data-name="loan calculator finance interest payment"
+                href="calculators/loan-calculator.html">
+
+                <div class="calculator-card-top">
+
+                    <div class="icon">
+                        🏦
+                    </div>
+
+                    <span class="tool-category">
+                        Finance
+                    </span>
+
+                </div>
+
+                <h3>
+                    Loan Calculator
+                </h3>
+
+                <p>
+                    Estimate monthly payment,
+                    interest and total loan cost.
+                </p>
+
+                <span class="go">
+                    Calculate Loan
+                    <strong>→</strong>
+                </span>
+
+            </a>
+
+
+
+            <!-- COMPOUND INTEREST -->
+
+            <a
+                class="card calculator-card"
+                data-name="compound interest investment savings finance"
+                href="calculators/compound-interest-calculator.html">
+
+                <div class="calculator-card-top">
+
+                    <div class="icon">
+                        📈
+                    </div>
+
+                    <span class="tool-category">
+                        Finance
+                    </span>
+
+                </div>
+
+                <h3>
+                    Compound Interest
+                </h3>
+
+                <p>
+                    Estimate how an investment
+                    grows through compounding.
+                </p>
+
+                <span class="go">
+                    Calculate Growth
+                    <strong>→</strong>
+                </span>
+
+            </a>
+
+
+
+            <!-- GST -->
+
+            <a
+                class="card calculator-card"
+                data-name="gst tax goods services tax"
+                href="calculators/gst-calculator.html">
+
+                <div class="calculator-card-top">
+
+                    <div class="icon">
+                        🧾
+                    </div>
+
+                    <span class="tool-category">
+                        Tax
+                    </span>
+
+                </div>
+
+                <h3>
+                    GST Calculator
+                </h3>
+
+                <p>
+                    Add GST to a price or extract
+                    GST from an inclusive amount.
+                </p>
+
+                <span class="go">
+                    Calculate GST
+                    <strong>→</strong>
+                </span>
+
+            </a>
+
+
+
+            <!-- DISCOUNT -->
+
+            <a
+                class="card calculator-card"
+                data-name="discount sale savings percentage price"
+                href="calculators/discount-calculator.html">
+
+                <div class="calculator-card-top">
+
+                    <div class="icon">
+                        🏷
+                    </div>
+
+                    <span class="tool-category">
+                        Shopping
+                    </span>
+
+                </div>
+
+                <h3>
+                    Discount Calculator
+                </h3>
+
+                <p>
+                    Find your savings and final
+                    price after a discount.
+                </p>
+
+                <span class="go">
+                    Calculate Discount
+                    <strong>→</strong>
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     HEALTH
+================================================== -->
+
+<section
+    class="section health-home-section"
+    id="health">
+
+    <div class="container">
+
+
+        <div class="category-header">
+
+            <div class="category-heading-left">
+
+                <div class="category-large-icon">
+                    ♡
+                </div>
+
+                <div>
+
+                    <span class="section-label">
+                        HEALTH
+                    </span>
+
+                    <h2>
+                        Health Calculators
+                    </h2>
+
+                    <p>
+                        Simple informational tools for
+                        common health calculations.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="health-feature">
+
+
+            <a
+                class="health-calculator-card calculator-card"
+                data-name="bmi body mass index health height weight"
+                href="calculators/bmi-calculator.html">
+
+
+                <div class="health-card-icon">
+                    ♡
+                </div>
+
+
+                <div class="health-card-content">
+
+                    <span class="tool-category">
+                        Health
+                    </span>
+
+                    <h3>
+                        BMI Calculator
+                    </h3>
+
+                    <p>
+                        Calculate Body Mass Index using
+                        your height and weight.
+                    </p>
+
+                    <span class="go">
+                        Calculate BMI →
+                    </span>
+
+                </div>
+
+
+                <div class="health-card-formula">
+
+                    <span>BMI Formula</span>
+
+                    <strong>
+                        kg ÷ m²
+                    </strong>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <p class="health-disclaimer">
+            Health calculator results are general informational
+            estimates and are not medical diagnoses.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     WHY CALCNEXA
+================================================== -->
+
+<section class="section why-home">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                WHY CALCNEXA?
+            </span>
+
+            <h2>
+                Calculations made simple.
+            </h2>
+
+            <p>
+                Everything you need for quick everyday
+                calculations in one place.
+            </p>
+
+        </div>
+
+
+
+        <div class="benefits-grid">
+
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Instant Results
+                </h3>
+
+                <p>
+                    Calculations are performed instantly
+                    directly in your browser.
+                </p>
+
+            </div>
+
+
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Simple to Use
+                </h3>
+
+                <p>
+                    Straightforward forms and clear
+                    results without unnecessary steps.
+                </p>
+
+            </div>
+
+
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    ◇
+                </div>
+
+                <h3>No Sign-Up Required</h3>
+
+<p>
+    Start using CalcNexa calculators
+    without creating an account.
+</p>
+
+            </div>
+
+
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    📱
+                </div>
+
+                <h3>
+                    Works Everywhere
+                </h3>
+
+                <p>
+                    Responsive layouts work on phones,
+                    tablets, laptops and desktops.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     LEARN SECTION
+================================================== -->
+
+<section class="section learn-home">
+
+    <div class="container">
+
+        <div class="learn-box">
+
+            <div class="learn-content">
+
+                <span class="section-label">
+                    CALCULATOR GUIDES
+                </span>
+
+                <h2>
+                    Don't just calculate.
+                    Understand the result.
+                </h2>
+
+                <p>
+                    Explore simple explanations of percentages,
+                    EMI, compound interest, BMI, GST and other
+                    everyday calculations.
+                </p>
+
+                <a
+                    href="blog.html"
+                    class="home-primary-button">
+
+                    Explore Calculator Guides →
+
+                </a>
+
+            </div>
+
+
+            <div class="learn-visual">
+
+                <div class="formula-card formula-one">
+
+                    <span>Percentage</span>
+
+                    <strong>
+                        (Part ÷ Whole) × 100
+                    </strong>
+
+                </div>
+
+
+                <div class="formula-card formula-two">
+
+                    <span>BMI</span>
+
+                    <strong>
+                        kg ÷ m²
+                    </strong>
+
+                </div>
+
+
+                <div class="formula-card formula-three">
+
+                    <span>Average</span>
+
+                    <strong>
+                        Sum ÷ Count
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CTA
+================================================== -->
+
+<section class="home-cta">
+
+    <div class="container">
+
+        <div class="home-cta-inner">
+
+            <span class="section-label">
+                GET STARTED
+            </span>
+
+            <h2>
+                What do you need to calculate?
+            </h2>
+
+            <p>
+                Choose from our collection of free
+                online calculators and get your result instantly.
+            </p>
+
+            <a
+                href="#calculators"
+                class="home-primary-button">
+
+                Browse All Calculators →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="footer enhanced-footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-about">
+
+            <a class="logo"
+               href="index.html">
+
+                Calc<span>Nexa</span>
+
+            </a>
+
+            <p>
+                Fast and easy online calculators for
+                math, finance, health and everyday use.
+            </p>
+
+            <span class="footer-small">
+                Calculate smarter.
+            </span>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+            <h3>
+                Calculators
+            </h3>
+
+            <a href="calculators/percentage-calculator.html">
+                Percentage
+            </a>
+
+            <a href="calculators/emi-calculator.html">
+                EMI
+            </a>
+
+            <a href="calculators/bmi-calculator.html">
+                BMI
+            </a>
+
+            <a href="calculators/age-calculator.html">
+                Age
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+            <h3>
+                Resources
+            </h3>
+
+            <a href="blog.html">
+                Calculator Guides
+            </a>
+
+            <a href="about.html">
+                About CalcNexa
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-col">
+
+            <h3>
+                Legal
+            </h3>
+
+            <a href="privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="terms.html">
+                Terms of Use
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container footer-bottom">
+    <span>© <span id="currentYear"></span> CalcNexa. All rights reserved.</span>
+    <span>Calculator results are for informational purposes only.</span>
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+document.addEventListener("keydown", function(event) {
+
+    if (
+        event.key === "/" &&
+        document.activeElement.tagName !== "INPUT"
+    ) {
+
+        event.preventDefault();
+
+        const search =
+            document.getElementById("calculatorSearch");
+
+        search.focus();
+
+    }
+
+});
+
+</script>
+
+
+</body>
+
+</html>

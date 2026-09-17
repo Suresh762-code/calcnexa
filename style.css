@@ -16,3 +16,2613 @@ a{color:inherit}.container{width:min(1120px,92%);margin:auto}.site-header{positi
 .notice{font-size:.9rem;color:var(--muted)}.hidden{display:none!important}
 @media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.main-nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--surface);padding:18px 4%;border-bottom:1px solid var(--border);flex-direction:column}.main-nav.open{display:flex}.menu-toggle{display:block;margin-left:auto}.theme-toggle{margin-left:0}.footer-grid{grid-template-columns:1fr 1fr}.footer-bottom{flex-direction:column}.hero{padding-top:58px}}
 @media(max-width:560px){.grid,.form-grid,.footer-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.section{padding:52px 0}.calc-box,.content-box{padding:19px}.hero h1{font-size:2.7rem}}
+
+/* ==================================================
+   CALCNEXA BLOG
+================================================== */
+
+.blog-hero {
+    padding: 90px 0 80px;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0,
+            rgba(91, 91, 214, 0.18),
+            transparent 50%
+        );
+}
+
+
+.blog-hero-content {
+    max-width: 850px;
+}
+
+
+.blog-hero h1 {
+    font-size: clamp(2.7rem, 6vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.055em;
+
+    margin: 12px 0 20px;
+}
+
+
+.blog-hero h1 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            var(--primary2)
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+.blog-hero p {
+    max-width: 700px;
+
+    margin:
+        0 auto
+        30px;
+
+    color: var(--muted);
+
+    font-size: 1.12rem;
+}
+
+
+.blog-search {
+    max-width: 620px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+
+.blog-search span {
+    position: absolute;
+
+    left: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: var(--muted);
+
+    font-size: 1.3rem;
+}
+
+
+.blog-search input {
+    width: 100%;
+
+    padding:
+        17px
+        20px
+        17px
+        50px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 16px;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--text);
+
+    font: inherit;
+
+    font-size: 1rem;
+
+    box-shadow:
+        var(--shadow);
+
+    outline: none;
+}
+
+
+.blog-search input:focus {
+    border-color:
+        var(--primary);
+}
+
+
+.blog-section-header {
+    margin-bottom: 30px;
+}
+
+
+.blog-section-header h2 {
+    font-size:
+        clamp(
+            1.9rem,
+            4vw,
+            2.7rem
+        );
+
+    margin:
+        5px 0
+        5px;
+
+    letter-spacing:
+        -0.035em;
+}
+
+
+.blog-section-header p {
+    color:
+        var(--muted);
+
+    margin:
+        5px 0;
+}
+
+
+.blog-section-header.centered {
+    text-align: center;
+}
+
+
+
+/* FEATURED GUIDE */
+
+.featured-guide {
+    display: grid;
+
+    grid-template-columns:
+        1.4fr
+        0.8fr;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        26px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+.featured-guide-content {
+    padding:
+        42px;
+}
+
+
+.featured-guide-content h2 {
+    font-size:
+        clamp(
+            1.8rem,
+            4vw,
+            2.7rem
+        );
+
+    line-height:
+        1.15;
+
+    letter-spacing:
+        -0.035em;
+
+    margin:
+        12px 0
+        18px;
+}
+
+
+.featured-guide-content p {
+    color:
+        var(--muted);
+}
+
+
+.blog-category {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    padding:
+        6px
+        11px;
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(
+            91,
+            91,
+            214,
+            0.10
+        );
+
+    color:
+        var(--primary);
+
+    font-size:
+        0.78rem;
+
+    font-weight:
+        800;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        0.04em;
+}
+
+
+.guide-formula {
+    margin:
+        24px 0;
+
+    padding:
+        18px;
+
+    background:
+        var(--bg);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        14px;
+}
+
+
+.guide-formula span {
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        0.82rem;
+
+    margin-bottom:
+        5px;
+}
+
+
+.guide-formula strong {
+    color:
+        var(--primary);
+
+    font-size:
+        1.15rem;
+}
+
+
+.example-calculation {
+    padding:
+        12px 15px;
+
+    border-left:
+        3px solid
+        var(--primary);
+
+    background:
+        var(--bg);
+
+    border-radius:
+        0 10px 10px 0;
+}
+
+
+.featured-visual {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    text-align:
+        center;
+
+    min-height:
+        420px;
+
+    padding:
+        30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--primary2)
+        );
+
+    color:
+        white;
+}
+
+
+.visual-symbol {
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    width:
+        120px;
+
+    height:
+        120px;
+
+    margin-bottom:
+        25px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.3
+        );
+
+    border-radius:
+        30px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.15
+        );
+
+    font-size:
+        4rem;
+
+    font-weight:
+        900;
+}
+
+
+.featured-visual p {
+    opacity:
+        0.85;
+}
+
+
+.featured-visual strong {
+    font-size:
+        1.4rem;
+}
+
+
+
+/* BUTTON */
+
+.blog-button {
+    display:
+        inline-block;
+
+    margin-top:
+        15px;
+
+    padding:
+        13px
+        20px;
+
+    border-radius:
+        12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            var(--primary2)
+        );
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    font-weight:
+        800;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.blog-button:hover {
+    transform:
+        translateY(-2px);
+}
+
+
+
+/* BLOG CARDS */
+
+.blog-grid {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        20px;
+}
+
+
+.guide-card {
+    padding:
+        25px;
+
+    background:
+        var(--bg);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        20px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.guide-card:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        var(--primary);
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+.guide-icon {
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    width:
+        54px;
+
+    height:
+        54px;
+
+    margin-bottom:
+        18px;
+
+    border-radius:
+        15px;
+
+    background:
+        rgba(
+            91,
+            91,
+            214,
+            0.10
+        );
+
+    color:
+        var(--primary);
+
+    font-size:
+        1.7rem;
+
+    font-weight:
+        900;
+}
+
+
+.guide-card h3 {
+    margin:
+        13px 0
+        9px;
+
+    font-size:
+        1.25rem;
+
+    line-height:
+        1.3;
+}
+
+
+.guide-card p {
+    color:
+        var(--muted);
+}
+
+
+.guide-card a {
+    display:
+        inline-block;
+
+    margin-top:
+        12px;
+
+    color:
+        var(--primary);
+
+    font-weight:
+        800;
+
+    text-decoration:
+        none;
+}
+
+
+.guide-card a:hover {
+    text-decoration:
+        underline;
+}
+
+
+.mini-formula {
+    padding:
+        14px;
+
+    margin-top:
+        18px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        12px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        0.88rem;
+}
+
+
+.mini-formula strong {
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    color:
+        var(--text);
+}
+
+
+.no-guides {
+    display:
+        none;
+
+    padding:
+        40px;
+
+    text-align:
+        center;
+
+    color:
+        var(--muted);
+}
+
+
+
+/* TIPS */
+
+.tips-grid {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        20px;
+}
+
+
+.tip-card {
+    padding:
+        28px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        20px;
+}
+
+
+.tip-card > span {
+    display:
+        block;
+
+    margin-bottom:
+        15px;
+
+    color:
+        var(--primary);
+
+    font-size:
+        2rem;
+
+    font-weight:
+        900;
+
+    opacity:
+        0.5;
+}
+
+
+.tip-card h3 {
+    margin:
+        0 0
+        8px;
+}
+
+
+.tip-card p {
+    margin:
+        0;
+
+    color:
+        var(--muted);
+}
+
+
+
+/* BLOG CTA */
+
+.blog-cta {
+    padding:
+        20px 0
+        80px;
+}
+
+
+.blog-cta-box {
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    gap:
+        30px;
+
+    padding:
+        40px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        24px;
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+.blog-cta-box h2 {
+    margin:
+        5px 0;
+
+    font-size:
+        2rem;
+}
+
+
+.blog-cta-box p {
+    margin:
+        5px 0;
+
+    color:
+        var(--muted);
+}
+
+
+
+/* ACTIVE NAVIGATION */
+
+.main-nav a.active {
+    color:
+        var(--primary);
+}
+
+
+
+/* =========================
+   RESPONSIVE BLOG
+========================= */
+
+@media (max-width: 900px) {
+
+    .blog-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .featured-guide {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .featured-visual {
+        min-height:
+            300px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .blog-hero {
+        padding:
+            65px 0
+            55px;
+    }
+
+
+    .blog-hero h1 {
+        font-size:
+            2.7rem;
+    }
+
+
+    .featured-guide-content {
+        padding:
+            25px;
+    }
+
+
+    .blog-grid,
+    .tips-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .blog-cta-box {
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        padding:
+            28px;
+    }
+
+
+    .blog-button {
+        width:
+            100%;
+
+        text-align:
+            center;
+    }
+
+}
+
+/* ==================================================
+   ENHANCED CALCNEXA HOMEPAGE
+================================================== */
+
+.home-hero {
+    padding: 105px 0 75px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0,
+            rgba(91,91,214,.20),
+            transparent 48%
+        );
+
+    text-align: center;
+}
+
+
+.home-hero-content {
+    max-width: 900px;
+}
+
+
+.hero-badge-new {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 13px;
+
+    border: 1px solid
+        rgba(91,91,214,.18);
+
+    border-radius: 999px;
+
+    background:
+        rgba(91,91,214,.08);
+
+    color: var(--primary);
+
+    font-size: .78rem;
+    font-weight: 850;
+
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+
+.hero-badge-new span {
+    display: grid;
+    place-items: center;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+    color: white;
+
+    font-size: .65rem;
+}
+
+
+.home-hero h1 {
+    margin: 20px 0 18px;
+
+    font-size:
+        clamp(3rem, 7vw, 5.7rem);
+
+    line-height: .98;
+
+    letter-spacing: -.06em;
+}
+
+
+.home-hero h1 span {
+    display: block;
+
+    margin-top: 8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            var(--primary2)
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+.hero-description {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 1.13rem;
+}
+
+
+.home-search {
+    position: relative;
+
+    max-width: 700px;
+
+    margin: 32px auto 0;
+}
+
+
+.home-search input {
+    width: 100%;
+
+    padding:
+        18px
+        55px
+        18px
+        52px;
+
+    border: 1px solid
+        var(--border);
+
+    border-radius: 17px;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--text);
+
+    font: inherit;
+    font-size: 1rem;
+
+    outline: none;
+
+    box-shadow:
+        0 18px 50px
+        rgba(16,24,40,.10);
+}
+
+
+.home-search input:focus {
+    border-color:
+        var(--primary);
+}
+
+
+.home-search-icon {
+    position: absolute;
+
+    top: 50%;
+    left: 19px;
+
+    transform:
+        translateY(-50%);
+
+    color:
+        var(--muted);
+
+    font-size: 1.35rem;
+}
+
+
+.search-shortcut {
+    position: absolute;
+
+    right: 17px;
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    display: grid;
+    place-items: center;
+
+    width: 28px;
+    height: 28px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 7px;
+
+    background:
+        var(--bg);
+
+    color:
+        var(--muted);
+
+    font-size: .85rem;
+}
+
+
+.hero-quick-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+    font-size: .88rem;
+}
+
+
+.hero-quick-links > span {
+    color: var(--muted);
+
+    padding: 6px 4px;
+}
+
+
+.hero-quick-links a {
+    padding: 5px 11px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        999px;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--muted);
+
+    text-decoration:
+        none;
+
+    transition: .2s;
+}
+
+
+.hero-quick-links a:hover {
+    color:
+        var(--primary);
+
+    border-color:
+        var(--primary);
+}
+
+
+.hero-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    max-width: 650px;
+
+    margin:
+        42px auto 0;
+
+    padding-top: 27px;
+
+    border-top:
+        1px solid
+        var(--border);
+}
+
+
+.hero-stats div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.hero-stats strong {
+    font-size: 1.15rem;
+}
+
+
+.hero-stats span {
+    color:
+        var(--muted);
+
+    font-size: .78rem;
+}
+
+
+
+/* ==================================================
+   SECTION HEADINGS
+================================================== */
+
+.home-section-heading {
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        flex-end;
+
+    gap: 25px;
+
+    margin-bottom:
+        32px;
+}
+
+
+.home-section-heading h2,
+.category-header h2 {
+    margin: 4px 0 5px;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            2.8rem
+        );
+
+    letter-spacing:
+        -.04em;
+}
+
+
+.home-section-heading p,
+.category-header p {
+    margin: 0;
+
+    color:
+        var(--muted);
+}
+
+
+
+/* ==================================================
+   CALCULATOR CARDS
+================================================== */
+
+.calculator-home-section {
+    background:
+        var(--bg);
+}
+
+
+.home-calculator-grid {
+    gap: 20px;
+}
+
+
+.home-calculator-grid .card {
+    min-height: 265px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.calculator-card-top {
+    display: flex;
+
+    align-items: center;
+    justify-content:
+        space-between;
+
+    margin-bottom: 8px;
+}
+
+
+.tool-category {
+    display:
+        inline-flex;
+
+    padding:
+        5px 10px;
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(91,91,214,.08);
+
+    color:
+        var(--primary);
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        800;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        .04em;
+}
+
+
+.home-calculator-grid .card h3 {
+    font-size: 1.2rem;
+
+    margin:
+        14px 0 7px;
+}
+
+
+.home-calculator-grid .card p {
+    flex-grow: 1;
+}
+
+
+.home-calculator-grid .go {
+    display: flex;
+
+    align-items: center;
+
+    justify-content:
+        space-between;
+
+    margin-top: 22px;
+
+    padding-top: 15px;
+
+    border-top:
+        1px solid
+        var(--border);
+}
+
+
+.home-calculator-grid .go strong {
+    font-size:
+        1.15rem;
+
+    transition:
+        transform .2s;
+}
+
+
+.home-calculator-grid .card:hover
+.go strong {
+    transform:
+        translateX(4px);
+}
+
+
+
+/* ==================================================
+   FINANCE SECTION
+================================================== */
+
+.category-section {
+    background:
+        var(--surface);
+}
+
+
+.category-heading-left {
+    display: flex;
+
+    align-items:
+        center;
+
+    gap: 18px;
+
+    margin-bottom:
+        34px;
+}
+
+
+.category-large-icon {
+    display: grid;
+
+    place-items: center;
+
+    width: 68px;
+    height: 68px;
+
+    flex-shrink: 0;
+
+    border-radius: 19px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--primary2)
+        );
+
+    color: white;
+
+    font-size: 1.9rem;
+
+    font-weight: 900;
+
+    box-shadow:
+        0 12px 28px
+        rgba(91,91,214,.20);
+}
+
+
+.category-section .card {
+    background:
+        var(--bg);
+}
+
+
+
+/* ==================================================
+   HEALTH
+================================================== */
+
+.health-home-section {
+    background:
+        var(--bg);
+}
+
+
+.health-feature {
+    max-width:
+        900px;
+}
+
+
+.health-calculator-card {
+    display: grid;
+
+    grid-template-columns:
+        auto
+        1fr
+        auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 30px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        22px;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--text);
+
+    text-decoration:
+        none;
+
+    box-shadow:
+        var(--shadow);
+
+    transition:
+        transform .2s,
+        border-color .2s;
+}
+
+
+.health-calculator-card:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        var(--primary);
+}
+
+
+.health-card-icon {
+    display: grid;
+
+    place-items: center;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(91,91,214,.10);
+
+    color:
+        var(--primary);
+
+    font-size:
+        2rem;
+}
+
+
+.health-card-content h3 {
+    margin:
+        8px 0 4px;
+
+    font-size:
+        1.4rem;
+}
+
+
+.health-card-content p {
+    margin:
+        0 0 8px;
+
+    color:
+        var(--muted);
+}
+
+
+.health-card-formula {
+    min-width:
+        150px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        15px;
+
+    background:
+        var(--bg);
+
+    text-align:
+        center;
+}
+
+
+.health-card-formula span {
+    display: block;
+
+    margin-bottom:
+        5px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .75rem;
+}
+
+
+.health-card-formula strong {
+    color:
+        var(--primary);
+
+    font-size:
+        1.2rem;
+}
+
+
+.health-disclaimer {
+    max-width:
+        900px;
+
+    margin-top:
+        14px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .82rem;
+}
+
+
+
+/* ==================================================
+   WHY CALCNEXA
+================================================== */
+
+.why-home {
+    background:
+        var(--surface);
+}
+
+
+.benefits-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 18px;
+}
+
+
+.benefit-card {
+    padding: 25px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        20px;
+
+    background:
+        var(--bg);
+}
+
+
+.benefit-icon {
+    display: grid;
+
+    place-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    margin-bottom:
+        18px;
+
+    border-radius:
+        13px;
+
+    background:
+        rgba(91,91,214,.10);
+
+    color:
+        var(--primary);
+
+    font-size:
+        1.3rem;
+}
+
+
+.benefit-card h3 {
+    margin:
+        0 0 7px;
+}
+
+
+.benefit-card p {
+    margin: 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .93rem;
+}
+
+
+
+/* ==================================================
+   LEARN
+================================================== */
+
+.learn-home {
+    background:
+        var(--bg);
+}
+
+
+.learn-box {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+    padding:
+        55px;
+
+    border-radius:
+        28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--surface),
+            rgba(91,91,214,.07)
+        );
+
+    border:
+        1px solid
+        var(--border);
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+.learn-content h2 {
+    margin:
+        7px 0 15px;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3.1rem
+        );
+
+    line-height:
+        1.08;
+
+    letter-spacing:
+        -.045em;
+}
+
+
+.learn-content p {
+    color:
+        var(--muted);
+
+    max-width:
+        530px;
+}
+
+
+.home-primary-button {
+    display:
+        inline-block;
+
+    margin-top:
+        15px;
+
+    padding:
+        13px 19px;
+
+    border-radius:
+        12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            var(--primary2)
+        );
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    font-weight:
+        800;
+
+    box-shadow:
+        0 10px 25px
+        rgba(91,91,214,.20);
+
+    transition:
+        transform .2s;
+}
+
+
+.home-primary-button:hover {
+    transform:
+        translateY(-2px);
+}
+
+
+.learn-visual {
+    position:
+        relative;
+
+    min-height:
+        300px;
+}
+
+
+.formula-card {
+    position:
+        absolute;
+
+    width:
+        230px;
+
+    padding:
+        22px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        18px;
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+.formula-card span {
+    display:
+        block;
+
+    margin-bottom:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .8rem;
+}
+
+
+.formula-card strong {
+    color:
+        var(--primary);
+}
+
+
+.formula-one {
+    top: 5px;
+    left: 20px;
+}
+
+
+.formula-two {
+    top: 105px;
+    right: 5px;
+}
+
+
+.formula-three {
+    bottom: 0;
+    left: 50px;
+}
+
+
+
+/* ==================================================
+   CTA
+================================================== */
+
+.home-cta {
+    padding:
+        85px 0;
+
+    background:
+        var(--surface);
+}
+
+
+.home-cta-inner {
+    max-width:
+        780px;
+
+    margin: auto;
+
+    text-align:
+        center;
+}
+
+
+.home-cta-inner h2 {
+    margin:
+        7px 0 12px;
+
+    font-size:
+        clamp(
+            2.2rem,
+            5vw,
+            3.6rem
+        );
+
+    letter-spacing:
+        -.05em;
+}
+
+
+.home-cta-inner p {
+    max-width:
+        600px;
+
+    margin:
+        0 auto;
+
+    color:
+        var(--muted);
+}
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.enhanced-footer {
+    padding-top:
+        58px;
+}
+
+
+.footer-about p {
+    max-width:
+        310px;
+
+    color:
+        #aeb7ca;
+}
+
+
+.footer-small {
+    display:
+        inline-block;
+
+    margin-top:
+        5px;
+
+    color:
+        #77839b;
+
+    font-size:
+        .85rem;
+}
+
+
+.enhanced-footer
+.footer-col a:hover {
+    color: white;
+}
+
+
+
+/* ==================================================
+   ACTIVE NAVIGATION
+================================================== */
+
+.main-nav a.active {
+    color:
+        var(--primary);
+}
+
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 900px) {
+
+    .benefits-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .learn-box {
+        grid-template-columns:
+            1fr;
+
+        padding:
+            38px;
+    }
+
+
+    .learn-visual {
+        min-height:
+            280px;
+    }
+
+
+    .health-calculator-card {
+        grid-template-columns:
+            auto 1fr;
+    }
+
+
+    .health-card-formula {
+        grid-column:
+            1 / -1;
+
+        text-align:
+            left;
+    }
+
+}
+
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+    .home-hero {
+        padding:
+            70px 0
+            55px;
+    }
+
+
+    .home-hero h1 {
+        font-size:
+            3rem;
+    }
+
+
+    .hero-description {
+        font-size:
+            1rem;
+    }
+
+
+    .hero-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:
+            20px;
+    }
+
+
+    .home-section-heading {
+        display:
+            block;
+    }
+
+
+    .category-heading-left {
+        align-items:
+            flex-start;
+    }
+
+
+    .category-large-icon {
+        width:
+            55px;
+
+        height:
+            55px;
+    }
+
+
+    .benefits-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .health-calculator-card {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .health-card-icon {
+        width:
+            58px;
+
+        height:
+            58px;
+    }
+
+
+    .learn-box {
+        padding:
+            27px;
+    }
+
+
+    .learn-visual {
+        min-height:
+            auto;
+
+        display:
+            flex;
+
+        flex-direction:
+            column;
+
+        gap:
+            12px;
+    }
+
+
+    .formula-card {
+        position:
+            static;
+
+        width:
+            100%;
+    }
+
+
+    .home-primary-button {
+        width:
+            100%;
+
+        text-align:
+            center;
+    }
+
+}
+
+/* ==================================================
+   CONTACT PAGE
+================================================== */
+
+.contact-hero {
+    padding: 90px 0 65px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0,
+            rgba(91,91,214,.17),
+            transparent 55%
+        );
+}
+
+
+.contact-hero-content {
+    max-width: 760px;
+}
+
+
+.contact-hero h1 {
+    margin: 8px 0 17px;
+
+    font-size:
+        clamp(3rem, 6vw, 4.8rem);
+
+    line-height: 1;
+
+    letter-spacing: -.055em;
+}
+
+
+.contact-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            var(--primary2)
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+.contact-hero p {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--muted);
+
+    font-size: 1.08rem;
+}
+
+
+
+/* CONTACT OPTIONS */
+
+.contact-options-section {
+    padding: 0 0 65px;
+
+    background: var(--bg);
+}
+
+
+.contact-options-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.contact-option {
+    padding: 25px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 19px;
+
+    background: var(--surface);
+
+    transition:
+        transform .2s,
+        border-color .2s,
+        box-shadow .2s;
+}
+
+
+.contact-option:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--primary);
+
+    box-shadow: var(--shadow);
+}
+
+
+.contact-option-icon {
+    display: grid;
+
+    place-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 17px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(91,91,214,.10);
+
+    color: var(--primary);
+
+    font-size: 1.3rem;
+
+    font-weight: 900;
+}
+
+
+.contact-option h3 {
+    margin: 0 0 7px;
+
+    font-size: 1.1rem;
+}
+
+
+.contact-option p {
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.6;
+
+    font-size: .92rem;
+}
+
+
+
+/* MAIN CONTACT */
+
+.contact-main-section {
+    padding: 80px 0;
+
+    background: var(--surface);
+}
+
+
+.contact-layout {
+    display: grid;
+
+    grid-template-columns:
+        .85fr 1.15fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+.contact-info h2 {
+    margin: 7px 0 14px;
+
+    font-size:
+        clamp(2rem, 4vw, 3rem);
+
+    letter-spacing: -.045em;
+}
+
+
+.contact-intro {
+    margin-bottom: 34px;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+
+.contact-info-item {
+    display: flex;
+
+    gap: 15px;
+
+    margin: 25px 0;
+}
+
+
+.contact-info-icon {
+    display: grid;
+
+    place-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background:
+        rgba(91,91,214,.10);
+
+    color: var(--primary);
+
+    font-weight: 900;
+}
+
+
+.contact-info-item h3 {
+    margin: 0 0 5px;
+
+    font-size: 1rem;
+}
+
+
+.contact-info-item p {
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.55;
+
+    font-size: .9rem;
+}
+
+
+.contact-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin-top: 30px;
+}
+
+
+.contact-links a {
+    color: var(--primary);
+
+    text-decoration: none;
+
+    font-weight: 800;
+
+    font-size: .9rem;
+}
+
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* FORM */
+
+.contact-form-card {
+    padding: 35px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        23px;
+
+    background:
+        var(--bg);
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+.form-group {
+    margin-bottom: 21px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--text);
+
+    font-size: .9rem;
+
+    font-weight: 750;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 15px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 11px;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--text);
+
+    font: inherit;
+
+    outline: none;
+
+    transition:
+        border-color .2s,
+        box-shadow .2s;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 150px;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color:
+        var(--primary);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(91,91,214,.10);
+}
+
+
+.message-counter {
+    margin-top: 5px;
+
+    text-align: right;
+
+    color: var(--muted);
+
+    font-size: .75rem;
+}
+
+
+.contact-submit {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    padding: 15px 20px;
+
+    border: 0;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            var(--primary2)
+        );
+
+    color: white;
+
+    font: inherit;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        transform .2s,
+        box-shadow .2s;
+}
+
+
+.contact-submit:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(91,91,214,.22);
+}
+
+
+.contact-form-note {
+    margin: 14px 0 0;
+
+    color: var(--muted);
+
+    text-align: center;
+
+    font-size: .76rem;
+
+    line-height: 1.5;
+}
+
+
+.contact-success {
+    display: none;
+
+    margin-top: 18px;
+
+    padding: 14px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 10px;
+
+    color: var(--muted);
+
+    background: var(--surface);
+
+    font-size: .85rem;
+
+    line-height: 1.5;
+}
+
+
+
+/* QUICK HELP */
+
+.contact-help-section {
+    padding: 75px 0;
+
+    background: var(--bg);
+}
+
+
+.contact-help-box {
+    display: flex;
+
+    align-items: center;
+
+    justify-content:
+        space-between;
+
+    gap: 35px;
+
+    padding: 40px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 23px;
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow);
+}
+
+
+.contact-help-box h2 {
+    margin: 6px 0;
+
+    font-size:
+        clamp(1.7rem, 4vw, 2.4rem);
+
+    letter-spacing: -.035em;
+}
+
+
+.contact-help-box p {
+    max-width: 650px;
+
+    margin: 5px 0;
+
+    color: var(--muted);
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .contact-options-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-hero {
+        padding: 65px 0 50px;
+    }
+
+
+    .contact-hero h1 {
+        font-size: 3rem;
+    }
+
+
+    .contact-main-section {
+        padding: 60px 0;
+    }
+
+
+    .contact-form-card {
+        padding: 23px;
+    }
+
+
+    .contact-help-box {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 28px;
+    }
+
+
+    .contact-help-box
+    .home-primary-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
