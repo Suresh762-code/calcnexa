@@ -1,12 +1,26 @@
 # CalcNexa
 
-A responsive multi-calculator website built with HTML, CSS and vanilla JavaScript.
+CalcNexa is a responsive online calculator website for quick and easy everyday calculations.
 
-## Run locally
-Open `index.html` in a browser, or serve the folder with any static web server.
+## Features
 
-## Before publishing
-- Replace the placeholder sitemap domain with your final domain.
-- Add your contact email.
-- Review Privacy Policy and Terms.
-- Add analytics/AdSense disclosures only when those services are actually enabled.
+- Math, finance, health and everyday calculators
+- Calculator search and category filters
+- Calculator guides
+- Light and dark mode
+- Responsive design
+- SEO-friendly pages
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+
+## Disclaimer
+
+Calculator results are for informational purposes only.
+
+---
+
+**CalcNexa — Calculate smarter.**
