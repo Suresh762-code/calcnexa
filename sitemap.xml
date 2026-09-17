@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace YOUR-DOMAIN.example with the final production domain before deployment. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- Replace example.com with your final domain before publishing. -->
-<url><loc>https://example.com/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/about.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/contact.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/privacy.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/terms.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/blog.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/standard-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/scientific-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/percentage-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/average-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/emi-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/loan-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/compound-interest-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/gst-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/bmi-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/age-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/date-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/calculators/discount-calculator.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/guides/percentage-guide.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/guides/emi-guide.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/guides/compound-interest-guide.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/guides/bmi-guide.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN.example/guides/age-guide.html</loc></url>
 </urlset>

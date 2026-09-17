@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-# Add Sitemap after connecting your final domain.
+
+# Add this after replacing the placeholder domain in sitemap.xml:
+# Sitemap: https://YOUR-DOMAIN.example/sitemap.xml
