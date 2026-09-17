@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Add this after replacing the placeholder domain in sitemap.xml:
-# Sitemap: https://YOUR-DOMAIN.example/sitemap.xml
+Sitemap: https://calcnexa.pages.dev/sitemap.xml
